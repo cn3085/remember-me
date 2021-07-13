@@ -151,3 +151,8 @@ body {
   border-bottom-right-radius: 0px;
   background-color: #f9e900;
 }
+
+.footer {
+  height: 155px;
+  background-color: #95b3cb;
+}
