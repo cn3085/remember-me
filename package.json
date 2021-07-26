@@ -21,6 +21,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "date-fns": "^2.22.1",
     "file-api": "^0.10.4",
     "filereader": "^0.10.3",
     "form-data": "^4.0.0",
