@@ -572,7 +572,8 @@ p {
 .testimonial .arrow {
     margin-left:10px;
     width:0;
-    border-top:10px solid #FECE1A;
+    /* border-top:10px solid #FECE1A; */
+    border-top:10px solid #181A1C;
     border-left: 20px outset transparent;
     border-right: 20px outset transparent;
 }
