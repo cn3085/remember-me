@@ -6,7 +6,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "deploy": "aws s3 sync ./public s3://asdf-remember-me --profile=dude && aws cloudfront create-invalidation --profile=dude --distribution-id E1P2NPZ8ZM1HVA --paths /*"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
