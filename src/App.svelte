@@ -3,6 +3,7 @@
   import About from "./pages/About.svelte";
   import Home from "./pages/Home.svelte";
   import ExamplePage from "./pages/ExamplePage.svelte";
+  import TalkPage from "./pages/ChatPage.svelte";
 </script>
 
 <main>
@@ -11,11 +12,13 @@
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/example">Example</Link>
+      <Link to="/talk">talk</Link>
     </nav>
     <div>
+      <Route path="/"><Home /></Route>
       <Route path="/about" component={About} />
       <Route path="/example" component={ExamplePage} />
-      <Route path="/"><Home /></Route>
+      <Route path="/talk" component={TalkPage} />
     </div>
   </Router>
 </main>
